@@ -1,14 +1,18 @@
 .offer-block {
-  background-image: url("../../assets/images/Header.svg");
+  background-image: url("../../assets/images/tsar-landing/Hero.jpg");
   background-size: cover;
 }
 
 .top-block {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   background: rgba(40, 50, 60, 0.8);
-  padding: 24px 206px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 24px 28px 24px;
+  }
 
   &__city {
     font-size: 16px;
@@ -38,9 +42,11 @@
 }
 
 .selling-point {
+  max-width: 944px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 208px 0;
+  padding: 0 28px 0;
 }
 
 .reset-button {
@@ -80,7 +86,9 @@
 
 .container {
   display: flex;
-  padding: 48px 206px;
+  max-width: 944px;
+  margin: 0 auto;
+  padding: 48px 28px;
   font-family: "Segoe UI";
 }
 
@@ -168,8 +176,10 @@
   font-family: "Segoe UI";
 
   &__main {
-    padding: 0 208px 0;
     position: relative;
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 28px 0;
   }
 
   &__content {
@@ -198,12 +208,12 @@
   &__woman {
     position: absolute;
     top: 216px;
-    left: 738px;
+    left: 532px;
   }
   &__mobile {
     position: absolute;
     top: 120px;
-    left: 890px;
+    left: 685px;
   }
 }
 
@@ -223,4 +233,66 @@
 .line {
   border-bottom: 1px solid #d2dce6;
   margin-bottom: 48px;
+}
+
+.advantage-block {
+  &__container {
+    max-width: 944px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 28px 48px;
+  }
+}
+
+.item-advantage {
+  margin-left: 24px;
+  max-width: 280px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__sub-text {
+    color: #28323c;
+    line-height: 24px;
+    padding: 24px 0 0;
+  }
+}
+
+.picture {
+  min-height: 216px;
+  position: relative;
+  &_man-sick {
+    background-image: url(../../assets/images/tsar-landing/man-sick.jpg);
+    background-repeat: no-repeat;
+  }
+
+  &_girl {
+    background-image: url(../../assets/images/tsar-landing/girl.jpg);
+    background-repeat: no-repeat;
+  }
+
+  &_handshake {
+    background-image: url(../../assets/images/tsar-landing/handshake.jpg);
+    background-repeat: no-repeat;
+  }
+  &__bg {
+    background: rgba(16, 20, 24, 0.65);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    line-height: 24px;
+    padding: 24px;
+  }
+
+  &__text {
+    line-height: 24px;
+    position: absolute;
+    color: white;
+    left: 24px;
+    bottom: 24px;
+  }
 }
