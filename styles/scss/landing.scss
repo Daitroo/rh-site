@@ -32,6 +32,7 @@
   color: white;
   line-height: 48px;
   margin: 72px 0 36px;
+  font-weight: 500;
 }
 
 .sub-header {
@@ -121,6 +122,7 @@
   }
   &__price {
     font-size: 32px;
+    font-weight: 500;
     line-height: 48px;
     color: #28323c;
   }
@@ -189,6 +191,7 @@
 
 .consultation {
   &__header {
+    font-weight: 500;
     font-size: 32px;
     color: #28323c;
     line-height: 48px;
@@ -295,4 +298,97 @@
     left: 24px;
     bottom: 24px;
   }
+}
+
+.company-block {
+  background-color: #f3f5f7;
+  font-family: "Segoe UI";
+  &__container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 28px 0;
+  }
+}
+
+.sub-header-dark {
+  font-size: 16px;
+  font-weight: 500;
+  color: #28323c;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.about-company {
+  display: flex;
+}
+
+.info-block {
+  border: 2px solid white;
+  margin-left: -2px;
+  margin-bottom: 48px;
+  padding: 24px;
+  min-width: 225px;
+
+  &__numeral {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #28323c;
+    padding: 24px 0 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #78828c;
+    line-height: 24px;
+  }
+}
+
+.how-work {
+  &__container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 28px 0;
+    display: flex;
+  }
+
+  &__header {
+    font-weight: 500;
+    font-size: 32px;
+    color: #28323c;
+    line-height: 48px;
+    margin: 48px 0 24px;
+  }
+}
+
+.step {
+  display: flex;
+  padding-bottom: 24px;
+
+  &__number {
+    background-color: #f3f5f7;
+    width: 24px;
+    height: 24px;
+    color: #00d2ff;
+    text-align: center;
+    font-size: 11px;
+    line-height: 24px;
+    flex: none;
+  }
+
+  &__text {
+    line-height: 24px;
+    padding-left: 4px;
+    max-width: 400px;
+  }
+}
+
+.block-youtube {
+  background: #28323c;
+  width: 432px;
+  height: 243px;
+  color: white;
+  line-height: 243px;
+  text-align: center;
+  margin: 120px 24px 94px;
 }

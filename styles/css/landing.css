@@ -23,7 +23,8 @@
   font-size: 32px;
   color: white;
   line-height: 48px;
-  margin: 72px 0 36px; }
+  margin: 72px 0 36px;
+  font-weight: 500; }
 
 .sub-header {
   font-size: 16px;
@@ -99,6 +100,7 @@
     color: #96a0aa; }
   .content__price {
     font-size: 32px;
+    font-weight: 500;
     line-height: 48px;
     color: #28323c; }
 
@@ -149,6 +151,7 @@
     display: flex; }
 
 .consultation__header {
+  font-weight: 500;
   font-size: 32px;
   color: #28323c;
   line-height: 48px;
@@ -231,3 +234,77 @@
     color: white;
     left: 24px;
     bottom: 24px; }
+
+.company-block {
+  background-color: #f3f5f7;
+  font-family: "Segoe UI"; }
+  .company-block__container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 28px 0; }
+
+.sub-header-dark {
+  font-size: 16px;
+  font-weight: 500;
+  color: #28323c;
+  line-height: 24px;
+  margin-bottom: 24px; }
+
+.about-company {
+  display: flex; }
+
+.info-block {
+  border: 2px solid white;
+  margin-left: -2px;
+  margin-bottom: 48px;
+  padding: 24px;
+  min-width: 225px; }
+  .info-block__numeral {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #28323c;
+    padding: 24px 0 24px; }
+  .info-block__text {
+    font-size: 16px;
+    color: #78828c;
+    line-height: 24px; }
+
+.how-work__container {
+  max-width: 944px;
+  margin: 0 auto;
+  padding: 0 28px 0;
+  display: flex; }
+
+.how-work__header {
+  font-weight: 500;
+  font-size: 32px;
+  color: #28323c;
+  line-height: 48px;
+  margin: 48px 0 24px; }
+
+.step {
+  display: flex;
+  padding-bottom: 24px; }
+  .step__number {
+    background-color: #f3f5f7;
+    width: 24px;
+    height: 24px;
+    color: #00d2ff;
+    text-align: center;
+    font-size: 11px;
+    line-height: 24px;
+    flex: none; }
+  .step__text {
+    line-height: 24px;
+    padding-left: 4px;
+    max-width: 400px; }
+
+.block-youtube {
+  background: #28323c;
+  width: 432px;
+  height: 243px;
+  color: white;
+  line-height: 243px;
+  text-align: center;
+  margin: 120px 24px 94px; }
