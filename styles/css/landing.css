@@ -1,7 +1,6 @@
 .offer-block {
   background-image: url("../../assets/images/Header.svg");
-  background-size: cover;
-  font-family: "Segoe UI"; }
+  background-size: cover; }
 
 .top-block {
   display: flex;
