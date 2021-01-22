@@ -1,0 +1,22 @@
+.row-test {
+  border: 1px solid black; }
+
+.column {
+  margin-bottom: 24px; }
+  @media screen and (min-width: 576px) {
+    .column {
+      margin: 0; } }
+
+.content {
+  height: 96px;
+  background-color: red; }
+  .content_first {
+    background-color: blue; }
+  .content_last {
+    background-color: green; }
+
+.main-container {
+  max-width: 944px;
+  padding: 0 28px;
+  margin: 96px auto;
+  border: 1px solid palevioletred; }
