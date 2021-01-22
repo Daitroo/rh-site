@@ -15,9 +15,22 @@
     color: white;
     line-height: 24px;
     vertical-align: middle; }
+    @media screen and (max-width: 768px) {
+      .top-block__city {
+        color: #b5bdc8; } }
   .top-block__arrow-down {
     position: relative;
     top: 2px; }
+  .top-block__logotype {
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .top-block__logotype {
+        display: none; } }
+  .top-block__short-logo {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .top-block__short-logo {
+        display: block; } }
 
 .header {
   font-size: 32px;
@@ -25,12 +38,27 @@
   line-height: 48px;
   margin: 72px 0 36px;
   font-weight: 500; }
+  @media screen and (max-width: 768px) {
+    .header {
+      font-size: 20px;
+      color: white;
+      line-height: 24px;
+      margin: 48px 0 24px;
+      font-weight: 500; } }
 
 .sub-header {
   font-size: 16px;
   color: white;
   line-height: 24px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  max-width: 500px; }
+  @media screen and (max-width: 768px) {
+    .sub-header {
+      font-size: 13px;
+      color: white;
+      line-height: 24px;
+      margin-bottom: 24px;
+      font-weight: 400; } }
 
 .selling-point {
   max-width: 944px;
@@ -80,6 +108,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 24px;
+  min-width: 280px;
   border: 1px solid #e6f0fa; }
   .block-pricing:hover {
     box-shadow: 0px 12px 24px rgba(26, 65, 101, 0.25);
@@ -137,7 +166,8 @@
   background: #fcc8be;
   border-radius: 12px;
   padding: 0 8px 0;
-  color: white; }
+  color: white;
+  flex: none; }
 
 .container-about {
   background-color: #f3f5f7;
@@ -156,6 +186,10 @@
   color: #28323c;
   line-height: 48px;
   padding: 48px 0 24px; }
+  @media screen and (max-width: 768px) {
+    .consultation__header {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .consultation__text {
   font-size: 16px;
@@ -163,6 +197,10 @@
   line-height: 24px;
   margin-bottom: 24px;
   max-width: 470px; }
+  @media screen and (max-width: 768px) {
+    .consultation__text {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .consultation-image__woman {
   position: absolute;
@@ -308,3 +346,109 @@
   line-height: 243px;
   text-align: center;
   margin: 120px 24px 94px; }
+
+.registration {
+  max-width: 944px;
+  margin: 0 auto;
+  padding-bottom: 72px; }
+  .registration__header {
+    font-weight: 500;
+    font-size: 32px;
+    color: #28323c;
+    line-height: 48px;
+    margin: 48px 0 24px;
+    text-align: center; }
+
+.registration-container {
+  background: #f3f5f7; }
+
+.form-container {
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 48px; }
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px; }
+  .form-input__label {
+    color: #b5bdc8;
+    font-style: Light;
+    font-size: 11px; }
+  .form-input .form-input__field {
+    width: 100%;
+    background: #f3f5f7;
+    border-bottom: 1px solid #b5bdc8;
+    padding-top: 5px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3a3a3a; }
+
+.input-reset {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.select-item {
+  display: flex;
+  flex-direction: column; }
+  .select-item label {
+    color: #b5bdc8;
+    font-style: Light;
+    font-size: 11px; }
+
+.checkbox-confirm {
+  display: flex; }
+  .checkbox-confirm__text {
+    line-height: 24px;
+    padding-left: 8px;
+    color: #5a646e; }
+
+.input__confirm {
+  display: none; }
+
+.input__confirm:checked + .input__checkbox .input__checkbox-square {
+  display: block; }
+
+.input__checkbox {
+  margin: 2px;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #95bef0; }
+
+.input__checkbox-square {
+  background: #00d2ff;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: none; }
+
+.button {
+  width: 100%;
+  background-color: #d2dce6;
+  padding: 12px 8px 14px;
+  border: none;
+  border-radius: 24px;
+  color: #96a0aa;
+  margin-top: 48px;
+  line-height: 24px;
+  text-align: center; }
+
+.footer {
+  background-color: #f3f5f7; }
+  .footer__container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 48px 0 72px; }
+  .footer__text {
+    font-size: 13px;
+    line-height: 24px;
+    color: #b5bdc8; }
