@@ -1,9 +1,13 @@
 .offer-block {
   background-image: url("../../assets/images/tsar-landing/Hero.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 .top-block {
-  background: rgba(40, 50, 60, 0.8); }
+  position: fixed;
+  background: rgba(40, 50, 60, 0.8);
+  width: 100%;
+  z-index: 2; }
   .top-block__container {
     display: flex;
     justify-content: space-between;
@@ -12,9 +16,12 @@
     padding: 24px 28px 24px; }
   .top-block__city {
     font-size: 16px;
-    color: white;
+    color: #b5bdc8;
     line-height: 24px;
     vertical-align: middle; }
+    .top-block__city:hover {
+      color: white;
+      cursor: pointer; }
     @media screen and (max-width: 768px) {
       .top-block__city {
         color: #b5bdc8; } }
@@ -32,40 +39,28 @@
       .top-block__short-logo {
         display: block; } }
 
-.header {
-  font-size: 32px;
-  color: white;
-  line-height: 48px;
-  margin: 72px 0 36px;
-  font-weight: 500; }
-  @media screen and (max-width: 768px) {
-    .header {
-      font-size: 20px;
-      color: white;
-      line-height: 24px;
-      margin: 48px 0 24px;
-      font-weight: 500; } }
-
-.sub-header {
-  font-size: 16px;
-  color: white;
-  line-height: 24px;
-  margin-bottom: 60px;
-  max-width: 500px; }
-  @media screen and (max-width: 768px) {
-    .sub-header {
-      font-size: 13px;
-      color: white;
-      line-height: 24px;
-      margin-bottom: 24px;
-      font-weight: 400; } }
-
 .selling-point {
   max-width: 944px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   padding: 0 28px 0; }
+  .selling-point__header {
+    font-size: 32px;
+    color: white;
+    line-height: 48px;
+    margin: 120px 0 36px;
+    font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      .selling-point__header {
+        margin: 96px 0 24px; } }
+  .selling-point__sub-header {
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      .selling-point__sub-header {
+        margin-bottom: 24px; } }
 
 .reset-button {
   border: none;
@@ -88,37 +83,67 @@
 .button-main {
   background: #50287d;
   border-radius: 24px;
-  max-width: 300px;
   height: 48px;
   padding: 10px 18px 14px;
   color: white;
   font-size: 16px;
   font-family: "Segoe UI";
   margin-bottom: 60px; }
+  .button-main:hover {
+    background-color: #5e2f93;
+    cursor: pointer; }
 
-.container {
-  display: flex;
+.option-block__visible {
+  position: relative;
   max-width: 944px;
   margin: 0 auto;
-  padding: 48px 28px;
-  font-family: "Segoe UI"; }
+  overflow-x: scroll;
+  padding: 48px 0; }
+  @media screen and (min-width: 768px) {
+    .option-block__visible {
+      overflow-x: hidden; } }
+
+.option-block__hidden {
+  padding-left: 28px;
+  padding-right: 28px;
+  display: inline-flex;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .option-block__hidden {
+      padding-right: 24px;
+      padding-left: 24px; } }
 
 .block-pricing {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 24px;
-  min-width: 280px;
-  border: 1px solid #e6f0fa; }
+  width: 280px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+  text-align: left;
+  border: solid 1px #e6f0fa;
+  cursor: pointer; }
+  .block-pricing:not(:last-of-type) {
+    margin-right: 24px; }
+  @media screen and (min-width: 768px) {
+    .block-pricing {
+      width: 100%;
+      max-width: 280px; } }
   .block-pricing:hover {
     box-shadow: 0px 12px 24px rgba(26, 65, 101, 0.25);
     border-radius: 4px; }
-  .block-pricing:hover .button-primary {
-    background: #50287d;
-    border-radius: 2px;
+  .block-pricing__button {
+    width: 100%;
     height: 64px;
-    color: white;
-    margin: 4px; }
+    border-radius: 2px;
+    margin: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #50287d;
+    text-align: start;
+    padding: 0 24px; }
+  .block-pricing:hover .block-pricing__button {
+    background: #50287d;
+    color: white; }
 
 .content {
   margin-left: 24px;
@@ -169,48 +194,68 @@
   color: white;
   flex: none; }
 
-.container-about {
-  background-color: #f3f5f7;
-  font-family: "Segoe UI"; }
-  .container-about__main {
-    position: relative;
+.consultation-block {
+  background-color: #e7ebef; }
+  .consultation-block__container {
     max-width: 944px;
     margin: 0 auto;
     padding: 0 28px 0; }
-  .container-about__content {
-    display: flex; }
+  .consultation-block__header {
+    font-weight: 500;
+    font-size: 32px;
+    color: #28323c;
+    line-height: 48px;
+    padding: 48px 0 24px; }
+  @media screen and (min-width: 576px) {
+    .consultation-block__images {
+      margin-bottom: 48px; } }
 
-.consultation__header {
-  font-weight: 500;
-  font-size: 32px;
-  color: #28323c;
-  line-height: 48px;
-  padding: 48px 0 24px; }
-  @media screen and (max-width: 768px) {
-    .consultation__header {
-      font-size: 20px;
-      line-height: 24px; } }
-
-.consultation__text {
+.text-block {
   font-size: 16px;
   color: #28323c;
   line-height: 24px;
-  margin-bottom: 24px;
-  max-width: 470px; }
-  @media screen and (max-width: 768px) {
-    .consultation__text {
-      font-size: 14px;
-      line-height: 24px; } }
+  margin-bottom: 24px; }
+  .text-block--gray {
+    font-size: 16px;
+    color: #5a646e;
+    line-height: 24px;
+    margin-bottom: 24px; }
 
-.consultation-image__woman {
-  position: absolute;
-  top: 216px;
-  left: 532px; }
-
-.consultation-image__mobile {
-  position: absolute;
-  top: 120px;
-  left: 685px; }
+.image {
+  position: relative;
+  width: 100%; }
+  @media screen and (min-width: 576px) {
+    .image {
+      height: 312px; } }
+  @media screen and (min-width: 768px) {
+    .image {
+      height: 408px; } }
+  .image__woman {
+    background-image: url(../../assets/images/tsar-landing/woman-call.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 262px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .image__woman {
+        position: absolute;
+        width: 58.33%; } }
+  .image__mobile {
+    background: url(../../assets/images/tsar-landing/woman.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 262px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .image__mobile {
+        position: absolute;
+        width: 58.33%; } }
 
 .button-secondary {
   font-size: 16px;
@@ -219,45 +264,62 @@
   padding: 10px 18px 14px;
   border: 2px solid #50287d;
   border-radius: 24px;
-  height: 48px;
-  min-width: 280px;
   box-sizing: border-box;
   margin-bottom: 48px; }
+  .button-secondary:hover {
+    border-color: #5e2f93;
+    color: white;
+    background-color: #5e2f93;
+    cursor: pointer; }
 
 .line {
-  border-bottom: 1px solid #d2dce6;
-  margin-bottom: 48px; }
+  border-bottom: 1px solid #d2dce6; }
 
-.advantage-block__container {
-  max-width: 944px;
-  margin: 0 auto;
-  display: flex;
-  padding: 0 28px 48px; }
+.advantage-block {
+  background-color: #e7ebef; }
+  .advantage-block__container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 48px 28px 48px; }
 
 .item-advantage {
-  margin-left: 24px;
   max-width: 280px; }
-  .item-advantage:first-of-type {
-    margin-left: 0; }
   .item-advantage__image {
     width: 100%; }
   .item-advantage__sub-text {
     color: #28323c;
     line-height: 24px;
-    padding: 24px 0 0; }
+    padding: 24px 0 0;
+    font-weight: 500; }
+    .item-advantage__sub-text--small {
+      font-size: 13px;
+      margin-top: 24px;
+      margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .item-advantage__sub-text {
+        margin-bottom: 0; } }
 
 .picture {
-  min-height: 216px;
-  position: relative; }
-  .picture_man-sick {
+  position: relative;
+  min-height: 216px; }
+  @media screen and (min-width: 576px) {
+    .picture {
+      max-height: 216px; } }
+  .picture--man-sick {
     background-image: url(../../assets/images/tsar-landing/man-sick.jpg);
-    background-repeat: no-repeat; }
-  .picture_girl {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .picture--girl {
     background-image: url(../../assets/images/tsar-landing/girl.jpg);
-    background-repeat: no-repeat; }
-  .picture_handshake {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .picture--handshake {
     background-image: url(../../assets/images/tsar-landing/handshake.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
   .picture__bg {
     background: rgba(16, 20, 24, 0.65);
     width: 100%;
@@ -274,12 +336,13 @@
     bottom: 24px; }
 
 .company-block {
-  background-color: #f3f5f7;
-  font-family: "Segoe UI"; }
+  background-color: #e7ebef;
+  font-family: "Segoe UI";
+  padding-top: 72px;
+  padding-bottom: 72px; }
   .company-block__container {
     max-width: 944px;
-    margin: 0 auto;
-    padding: 0 28px 0; }
+    margin: 0 auto; }
 
 .sub-header-dark {
   font-size: 16px;
@@ -289,14 +352,39 @@
   margin-bottom: 24px; }
 
 .about-company {
-  display: flex; }
+  padding: 0 28px 0; }
+  .about-company__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-style: solid;
+    border-color: white; }
+    @media screen and (min-width: 768px) {
+      .about-company__container {
+        margin: 0;
+        border-left-width: 2px; } }
 
 .info-block {
-  border: 2px solid white;
-  margin-left: -2px;
-  margin-bottom: 48px;
-  padding: 24px;
-  min-width: 225px; }
+  margin-top: -2px;
+  padding: 24px 24px 48px;
+  display: flex;
+  min-height: 96px;
+  border-color: #fff;
+  border-style: solid;
+  border-top-width: 2px; }
+  @media screen and (min-width: 768px) {
+    .info-block {
+      border-right-width: 2px;
+      display: block;
+      border-bottom-width: 2px;
+      max-width: 260px; } }
+  @media screen and (min-width: 992px) {
+    .info-block {
+      flex-basis: 0;
+      flex-grow: 1;
+      -webkit-box-flex: 1; } }
+  .info-block:last-of-type {
+    border-bottom-width: 2px; }
   .info-block__numeral {
     font-size: 32px;
     font-weight: 500;
@@ -311,8 +399,7 @@
 .how-work__container {
   max-width: 944px;
   margin: 0 auto;
-  padding: 0 28px 0;
-  display: flex; }
+  padding: 0 28px 48px; }
 
 .how-work__header {
   font-weight: 500;
@@ -340,12 +427,9 @@
 
 .block-youtube {
   background: #28323c;
-  width: 432px;
-  height: 243px;
   color: white;
   line-height: 243px;
-  text-align: center;
-  margin: 120px 24px 94px; }
+  text-align: center; }
 
 .registration {
   max-width: 944px;
@@ -353,21 +437,25 @@
   padding-bottom: 72px; }
   .registration__header {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 20px;
     color: #28323c;
-    line-height: 48px;
+    line-height: 24px;
     margin: 48px 0 24px;
     text-align: center; }
+    @media screen and (min-width: 576px) {
+      .registration__header {
+        font-size: 32px;
+        line-height: 48px; } }
 
 .registration-container {
-  background: #f3f5f7; }
+  background: #e7ebef; }
 
 .form-container {
   max-width: 430px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 48px 0 48px; }
+  padding: 48px 24px 48px; }
 
 .form-input {
   display: flex;
@@ -379,7 +467,7 @@
     font-size: 11px; }
   .form-input .form-input__field {
     width: 100%;
-    background: #f3f5f7;
+    background: #e7ebef;
     border-bottom: 1px solid #b5bdc8;
     padding-top: 5px;
     margin-top: 4px;
@@ -409,6 +497,9 @@
     line-height: 24px;
     padding-left: 8px;
     color: #5a646e; }
+    .checkbox-confirm__text--fiolet {
+      color: #50287d;
+      text-decoration: none; }
 
 .input__confirm {
   display: none; }
@@ -431,6 +522,9 @@
   border-radius: 2px;
   display: none; }
 
+.input:hover {
+  cursor: pointer; }
+
 .button {
   width: 100%;
   background-color: #d2dce6;
@@ -441,14 +535,19 @@
   margin-top: 48px;
   line-height: 24px;
   text-align: center; }
+  .button:hover {
+    cursor: pointer;
+    background-color: #5e2f93;
+    color: white; }
 
 .footer {
-  background-color: #f3f5f7; }
+  background-color: #e7ebef; }
   .footer__container {
     max-width: 944px;
     margin: 0 auto;
-    padding: 48px 0 72px; }
+    padding: 48px 28px 72px; }
   .footer__text {
     font-size: 13px;
     line-height: 24px;
-    color: #b5bdc8; }
+    color: #b5bdc8;
+    margin-bottom: 24px; }
