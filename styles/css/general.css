@@ -1,0 +1,111 @@
+.reset-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none; }
+
+.button-primary {
+  background: #50287d;
+  border-radius: 24px;
+  height: 48px;
+  padding: 14px 18px 14px;
+  color: white;
+  font-size: 16px;
+  font-family: "Segoe UI";
+  margin-bottom: 60px; }
+  .button-primary--short {
+    max-width: 160px;
+    margin: 72px 30px 48px;
+    text-align: center; }
+  .button-primary:hover {
+    background-color: #5e2f93;
+    cursor: pointer; }
+
+.button-secondary {
+  font-size: 16px;
+  line-height: 24px;
+  color: #50287d;
+  padding: 10px 18px 14px;
+  border: 2px solid #50287d;
+  border-radius: 24px;
+  box-sizing: border-box;
+  margin-bottom: 48px; }
+  .button-secondary:hover {
+    border-color: #5e2f93;
+    color: white;
+    background-color: #5e2f93;
+    cursor: pointer; }
+
+.button-main-disabled {
+  width: 100%;
+  background-color: #d2dce6;
+  padding: 12px 8px 14px;
+  border: none;
+  border-radius: 24px;
+  color: #96a0aa;
+  margin-top: 48px;
+  line-height: 24px;
+  text-align: center; }
+  .button-main-disabled:hover {
+    cursor: pointer;
+    background-color: #5e2f93;
+    color: white; }
+
+.input-reset {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.label {
+  color: #b5bdc8;
+  font-style: Light;
+  font-size: 11px; }
+
+.input-field {
+  width: 100%;
+  background: #e7ebef;
+  border-bottom: 1px solid #b5bdc8;
+  padding-top: 5px;
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a; }
+
+.checkbox-field__checkbox-original {
+  display: none; }
+
+.checkbox-field__checkbox-original:checked + .checkbox-field__checkbox .checkbox-field__checkbox-square {
+  display: block; }
+
+.checkbox-field__checkbox {
+  margin: 2px;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #95bef0; }
+
+.checkbox-field__checkbox-square {
+  background: #00d2ff;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: none; }
+
+body {
+  font-family: "Segoe UI"; }

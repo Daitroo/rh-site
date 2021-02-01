@@ -80,7 +80,7 @@
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none; }
 
-.button-main {
+.primary-button {
   background: #50287d;
   border-radius: 24px;
   height: 48px;
@@ -89,7 +89,7 @@
   font-size: 16px;
   font-family: "Segoe UI";
   margin-bottom: 60px; }
-  .button-main:hover {
+  .primary-button:hover {
     background-color: #5e2f93;
     cursor: pointer; }
 
