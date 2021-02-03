@@ -37,11 +37,13 @@
   font-size: 16px;
   line-height: 24px;
   color: #50287d;
+  font-weight: 500;
   padding: 10px 18px 14px;
   border: 2px solid #50287d;
   border-radius: 24px;
   box-sizing: border-box;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  text-align: center; }
   .button-secondary:hover {
     border-color: #5e2f93;
     color: white;
@@ -58,15 +60,12 @@
   margin-top: 48px;
   line-height: 24px;
   text-align: center; }
-  .button-main-disabled:hover {
-    cursor: pointer;
-    background-color: #5e2f93;
-    color: white; }
 
 .input-reset {
   border: none;
   background-image: none;
   background-color: transparent;
+  padding: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
@@ -83,16 +82,22 @@
   padding-top: 5px;
   margin-top: 4px;
   font-size: 16px;
-  line-height: 24px;
-  color: #3a3a3a; }
+  line-height: 24px; }
+  .input-field--white {
+    width: 100%;
+    border-bottom: 1px solid #b5bdc8;
+    font-size: 16px;
+    line-height: 36px;
+    color: #b5bdc8; }
 
-.checkbox-field__checkbox-original {
+.confirm-checkbox__checkbox-original {
   display: none; }
 
-.checkbox-field__checkbox-original:checked + .checkbox-field__checkbox .checkbox-field__checkbox-square {
+.confirm-checkbox__checkbox-original:checked + .confirm-checkbox__checkbox .confirm-checkbox__checkbox-square {
   display: block; }
 
-.checkbox-field__checkbox {
+.confirm-checkbox__checkbox {
+  cursor: pointer;
   margin: 2px;
   padding: 3px;
   width: 20px;
@@ -100,7 +105,7 @@
   border-radius: 4px;
   border: 2px solid #95bef0; }
 
-.checkbox-field__checkbox-square {
+.confirm-checkbox__checkbox-square {
   background: #00d2ff;
   width: 10px;
   height: 10px;
@@ -109,3 +114,9 @@
 
 body {
   font-family: "Segoe UI"; }
+
+.header {
+  color: #28323c;
+  font-size: 32px;
+  margin: 24px 0 48px;
+  font-weight: 500; }
