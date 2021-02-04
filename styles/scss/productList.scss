@@ -45,28 +45,6 @@
   }
 }
 
-.user {
-  margin-top: 48px;
-  display: flex;
-  &__name {
-    margin-left: 24px;
-    color: #78828c;
-    line-height: 24px;
-    display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
-  }
-
-  &__icon {
-    &--active {
-    }
-    @media screen and (min-width: 768px) {
-    }
-  }
-}
-
 .option {
   display: flex;
   position: relative;
@@ -95,16 +73,14 @@
   }
 }
 
-.button-primary {
-  &--short {
-    display: none;
+.button-short {
+  display: none;
 
-    @media screen and (min-width: 768px) {
-      max-width: 160px;
-      margin: 72px 30px 48px;
-      text-align: center;
-      display: block;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 160px;
+    margin: 72px 30px 48px;
+    text-align: center;
+    display: block;
   }
 }
 

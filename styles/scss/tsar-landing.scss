@@ -116,7 +116,6 @@
   padding: 10px 18px 14px;
   color: white;
   font-size: 16px;
-  font-family: "Segoe UI";
   margin-bottom: 60px;
 
   &:hover {
@@ -358,6 +357,7 @@
 
 .advantage-block {
   background-color: #e7ebef;
+
   &__container {
     max-width: 944px;
     margin: 0 auto;
@@ -367,9 +367,11 @@
 
 .item-advantage {
   max-width: 280px;
+
   &__image {
     width: 100%;
   }
+
   &__sub-text {
     color: #28323c;
     line-height: 24px;
@@ -381,6 +383,7 @@
       margin-top: 24px;
       margin-bottom: 24px;
     }
+
     @media screen and (min-width: 576px) {
       margin-bottom: 0;
     }
@@ -437,9 +440,9 @@
 
 .company-block {
   background-color: #e7ebef;
-  font-family: "Segoe UI";
   padding-top: 72px;
   padding-bottom: 72px;
+
   &__container {
     max-width: 944px;
     margin: 0 auto;
@@ -456,6 +459,7 @@
 
 .about-company {
   padding: 0 28px 0;
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -623,6 +627,7 @@
 .select-item {
   display: flex;
   flex-direction: column;
+
   label {
     color: #b5bdc8;
     font-style: Light;
