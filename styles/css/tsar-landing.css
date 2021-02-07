@@ -62,37 +62,6 @@
       .selling-point__sub-header {
         margin-bottom: 24px; } }
 
-.reset-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none; }
-
-.primary-button {
-  background: #50287d;
-  border-radius: 24px;
-  height: 48px;
-  padding: 10px 18px 14px;
-  color: white;
-  font-size: 16px;
-  font-family: "Segoe UI";
-  margin-bottom: 60px; }
-  .primary-button:hover {
-    background-color: #5e2f93;
-    cursor: pointer; }
-
 .option-block__visible {
   position: relative;
   max-width: 944px;
@@ -337,7 +306,6 @@
 
 .company-block {
   background-color: #e7ebef;
-  font-family: "Segoe UI";
   padding-top: 72px;
   padding-bottom: 72px; }
   .company-block__container {
@@ -475,55 +443,15 @@
     line-height: 24px;
     color: #3a3a3a; }
 
-.input-reset {
-  border: none;
-  background-image: none;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
-
-.select-item {
-  display: flex;
-  flex-direction: column; }
-  .select-item label {
-    color: #b5bdc8;
-    font-style: Light;
-    font-size: 11px; }
-
-.checkbox-confirm {
+.confirm {
   display: flex; }
-  .checkbox-confirm__text {
+  .confirm__text {
     line-height: 24px;
     padding-left: 8px;
     color: #5a646e; }
-    .checkbox-confirm__text--fiolet {
+    .confirm__text--fiolet {
       color: #50287d;
       text-decoration: none; }
-
-.input__confirm {
-  display: none; }
-
-.input__confirm:checked + .input__checkbox .input__checkbox-square {
-  display: block; }
-
-.input__checkbox {
-  margin: 2px;
-  padding: 3px;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  border: 2px solid #95bef0; }
-
-.input__checkbox-square {
-  background: #00d2ff;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  display: none; }
-
-.input:hover {
-  cursor: pointer; }
 
 .button {
   width: 100%;

@@ -67,11 +67,9 @@
   font-weight: 500;
 }
 
-.opportunities-block {
-  &__illustration {
-    width: 100%;
-    margin-top: 24px;
-  }
+.illustration {
+  width: 100%;
+  margin-top: 24px;
 }
 
 .block {
@@ -202,6 +200,7 @@
 .block-add-insured {
   display: flex;
   margin: 72px 0 72px;
+
   &__text {
     margin-left: 12px;
     color: #28323c;

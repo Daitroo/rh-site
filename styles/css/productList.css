@@ -33,18 +33,6 @@
       .header-logo__short {
         display: none; } }
 
-.user {
-  margin-top: 48px;
-  display: flex; }
-  .user__name {
-    margin-left: 24px;
-    color: #78828c;
-    line-height: 24px;
-    display: none; }
-    @media screen and (min-width: 768px) {
-      .user__name {
-        display: block; } }
-
 .option {
   display: flex;
   position: relative;
@@ -66,10 +54,10 @@
       .option__name {
         display: block; } }
 
-.button-primary--short {
+.button-short {
   display: none; }
   @media screen and (min-width: 768px) {
-    .button-primary--short {
+    .button-short {
       max-width: 160px;
       margin: 72px 30px 48px;
       text-align: center;
@@ -209,7 +197,7 @@
     color: #50287d;
     text-align: center;
     padding: 14px 0 16px; }
-    .block__button--fiolet {
+    .block__button--primary {
       background: #50287d;
       border-radius: 2px;
       font-size: 16px;

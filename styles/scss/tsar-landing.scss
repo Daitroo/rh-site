@@ -86,44 +86,6 @@
   }
 }
 
-.reset-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-}
-
-.primary-button {
-  background: #50287d;
-  border-radius: 24px;
-  height: 48px;
-  padding: 10px 18px 14px;
-  color: white;
-  font-size: 16px;
-  margin-bottom: 60px;
-
-  &:hover {
-    background-color: #5e2f93;
-    cursor: pointer;
-  }
-}
-
 .option-block {
   &__visible {
     position: relative;
@@ -262,6 +224,7 @@
     margin: 0 auto;
     padding: 0 28px 0;
   }
+
   &__header {
     font-weight: 500;
     font-size: 32px;
@@ -269,6 +232,7 @@
     line-height: 48px;
     padding: 48px 0 24px;
   }
+
   &__images {
     @media screen and (min-width: 576px) {
       margin-bottom: 48px;
@@ -615,27 +579,7 @@
   }
 }
 
-.input-reset {
-  border: none;
-  background-image: none;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.select-item {
-  display: flex;
-  flex-direction: column;
-
-  label {
-    color: #b5bdc8;
-    font-style: Light;
-    font-size: 11px;
-  }
-}
-
-.checkbox-confirm {
+.confirm {
   display: flex;
 
   &__text {
@@ -647,37 +591,6 @@
       color: #50287d;
       text-decoration: none;
     }
-  }
-}
-
-.input {
-  &__confirm {
-    display: none;
-  }
-
-  &__confirm:checked + &__checkbox &__checkbox-square {
-    display: block;
-  }
-
-  &__checkbox {
-    margin: 2px;
-    padding: 3px;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    border: 2px solid #95bef0;
-  }
-
-  &__checkbox-square {
-    background: #00d2ff;
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    display: none;
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }
 

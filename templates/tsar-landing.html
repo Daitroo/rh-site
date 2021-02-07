@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/tsar-landing.css" />
     <link rel="stylesheet" href="/styles/css/grids.css" />
+    <link rel="stylesheet" href="/styles/css/general.css" />
     <title>Царь лендинг</title>
   </head>
   <body>
@@ -39,13 +40,14 @@
           </div>
           <div class="offset-sm-6"></div>
           <button
-            class="primary-button reset-button col-12 col-sm-7 col-md-6 col-lg-4"
+            class="button-primary reset-button col-12 col-sm-7 col-md-6 col-lg-4"
           >
             Выбрать пакет
           </button>
         </div>
       </div>
     </div>
+
     <div class="option-block">
       <div class="option-block__visible">
         <div class="option-block__hidden">
@@ -74,7 +76,6 @@
               Выбрать на 1 месяц
             </button>
           </article>
-
           <article class="block-pricing">
             <div class="block-pricing__content content">
               <div class="content__name">Расширенный</div>
@@ -107,7 +108,6 @@
               Выбрать на 1 месяц
             </button>
           </article>
-
           <article class="block-pricing">
             <div class="block-pricing__content content">
               <div class="content__name">Полный</div>
@@ -150,6 +150,7 @@
         </div>
       </div>
     </div>
+
     <div class="consultation-block">
       <div class="consultation-block__container">
         <div class="consultation-block__header">
@@ -189,6 +190,7 @@
       </div>
     </div>
     <div class="line"></div>
+
     <div class="advantage-block">
       <div class="advantage-block__container">
         <div class="row">
@@ -232,53 +234,7 @@
         </div>
       </div>
     </div>
-    <!--
-      <div class="line"></div>
-    <div class="company-block">
-      <div class="company-block__container">
-        <h2 class="sub-header-dark">
-          Ренессанс здоровье — <br />входит в группу компаний Ренессанс
-          страхование
-        </h2>
-        <div class="about-company">
-          <div class="about-company__container">
-            <div class="info-block col-12 col-md-3 col-lg">
-              <img
-                src="../assets/icons/Colored-couple.svg"
-                class="info-block__image"
-              />
-              <div class="info-block__numeral">220 000</div>
-              <div class="info-block__text">Клиентов по всей России</div>
-            </div>
-            <div class="info-block col-12 col-md-3 col-lg">
-              <img
-                src="../assets/icons/Colored-camera.svg"
-                class="info-block__image"
-              />
-              <div class="info-block__numeral">2000</div>
-              <div class="info-block__text">Онлайн-консультаций в месяц</div>
-            </div>
-            <div class="info-block col-12 col-md-3 col-lg">
-              <img
-                src="../assets/icons/Colored-house.svg"
-                class="info-block__image"
-              />
-              <div class="info-block__numeral">2000</div>
-              <div class="info-block__text">Выездных консультаций</div>
-            </div>
-            <div class="info-block col-12 col-md-3 col-lg">
-              <img
-                src="../assets/icons/Colored-doctor.svg"
-                class="info-block__image"
-              />
-              <div class="info-block__numeral">500</div>
-              <div class="info-block__text">Врачей</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
+
     <div class="how-work">
       <div class="how-work__container">
         <div class class="how-work-block">
@@ -322,6 +278,7 @@
       </div>
     </div>
     <div class="line"></div>
+
     <div class="registration">
       <div class="registration__header">Оформить пакет медицинской помощи</div>
       <div class="registration-container">
@@ -361,39 +318,22 @@
                 id="number-phone"
               />
             </div>
-            <!--
-              <div class="select-item">
-                <label class="select-item__label" for="package">Пакет</label>
-                <select id="select-item__package">
-                  <option value="base">Базовый, на 1 месяц — 900 ₽</option>
-                  <option
-                    value="
-                  expanded"
-                  >
-                    Расширенный, на 3 месяца
-                  </option>
-                  <option value="full">Полный,на 9 месяцев</option>
-                </select>
-              </div>
-              -->
-            <div class="checkbox-confirm">
-              <label class="input">
+            <div class="confirm">
+              <label class="confirm-checkbox">
                 <input
                   type="checkbox"
-                  class="input__confirm"
                   checked="checked"
+                  class="confirm-checkbox__checkbox-original"
                 />
-                <div class="input__checkbox">
-                  <div class="input__checkbox-square"></div>
+                <div class="confirm-checkbox__checkbox">
+                  <div class="confirm-checkbox__checkbox-square"></div>
                 </div>
               </label>
               <div class="checkbox-confirm__text">
                 Продолжая, я соглашаюсь с
-                <a href="#" class="checkbox-confirm__text--fiolet">правилами</a>
+                <a href="#" class="confirm__text--fiolet">правилами</a>
                 и
-                <a href="#" class="checkbox-confirm__text--fiolet"
-                  >программой</a
-                >
+                <a href="#" class="confirm__text--fiolet">программой</a>
                 оказания услуг.
               </div>
             </div>
@@ -402,6 +342,7 @@
         </div>
       </div>
     </div>
+
     <div class="footer">
       <div class="footer__container">
         <div class="row">
