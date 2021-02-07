@@ -1,0 +1,279 @@
+.main-menu {
+  background-color: #e6f0fa;
+  height: 100vh;
+  width: 96px;
+  position: fixed;
+  display: none;
+
+  @media screen and (min-width: 576px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 355px;
+  }
+
+  &__container {
+    padding-top: 24px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+      padding-left: 28px;
+    }
+  }
+}
+
+.header-logo {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+
+  &__short {
+    display: none;
+
+    @media screen and (min-width: 576px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.option {
+  display: flex;
+  position: relative;
+  margin-top: 24px;
+
+  &--user {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 48px;
+  }
+
+  &__icon {
+    padding-left: 0px;
+    z-index: 2;
+  }
+
+  &__name {
+    margin-left: 24px;
+    color: #78828c;
+    line-height: 24px;
+    display: none;
+
+    &--active {
+      color: #28323c;
+      font-weight: 500;
+      margin-left: 24px;
+      line-height: 24px;
+      display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+}
+
+.option-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-active {
+  background-color: #fff;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sub-title {
+  color: #b5bdc8;
+  font-size: 13px;
+  margin-top: 48px;
+  margin-left: 48px;
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.top-menu {
+  display: none;
+
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+  }
+}
+
+.edit-block {
+  margin-left: 0;
+
+  @media screen and (min-width: 576px) {
+    margin-left: 96px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 355px;
+  }
+
+  &__container {
+    padding: 0 28px 0;
+    max-width: 944px;
+  }
+}
+
+.user-photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 48px 0 24px;
+  cursor: pointer;
+
+  @media screen and (min-width: 576px) {
+    padding: 0 0 24px;
+  }
+
+  &__bg {
+    background: #f3f5f7;
+    height: 144px;
+    width: 144px;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    height: 48px;
+    position: absolute;
+    left: 48px;
+  }
+}
+
+.item {
+  margin-bottom: 24px;
+
+  &__label {
+    color: #b5bdc8;
+    font-style: Light;
+    font-size: 11px;
+    margin-bottom: 24px;
+  }
+}
+
+.button-color {
+  color: #cedc00;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: #e0f000;
+  }
+}
+
+.line {
+  border-bottom: 1px solid #d2dce6;
+  width: 100%;
+  margin: 48px 0 24px;
+}
+
+.add-card {
+  padding: 0 28px 0;
+  max-width: 944px;
+
+  &__rectangle {
+    height: 168px;
+    border: 1px solid #d2dce6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__button {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #50287d;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: #96a0aa;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.bottom-menu {
+  padding: 24px 28px 96px;
+  max-width: 944px;
+
+  @media screen and (min-width: 576px) {
+    padding: 24px 28px 48px;
+  }
+
+  &__option {
+    color: #d2dce6;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 12px;
+    cursor: pointer;
+
+    &--red {
+      color: #ff005a;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 24px;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff669c;
+      }
+    }
+  }
+}
+
+.sub-menu {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+  background-color: #e6f0fa;
+  padding: 24px 12px 24px 24px;
+
+  @media screen and (min-width: 576px) {
+    display: none;
+  }
+}
